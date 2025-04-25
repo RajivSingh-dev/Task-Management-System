@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<!-- Sign-Up Section -->
+<div id="signup-section">
+    <h2>Create an Account</h2>
+    <div class="form-group">
+        <label for="signup-username">Username</label>
+        <input type="text" class="form-control" id="signup-username" placeholder="Enter Username" required />
+    </div>
+    <div class="form-group">
+        <label for="signup-email">Email</label>
+        <input type="email" class="form-control" id="signup-email" placeholder="Enter Email" required />
+    </div>
+    <div class="form-group">
+        <label for="signup-password">Password</label>
+        <input type="password" class="form-control" id="signup-password" placeholder="Enter Password" required />
+    </div>
+    <button type="button" class="btn btn-primary" id="signup-button">Sign Up</button>
+</div>
+
+<!-- Link to Toggle to Login -->
+<p>Already have an account? <a href="javascript:void(0);" id="login-link">Login</a></p>
+
+<!-- Login Section (Initially Hidden) -->
+<div id="login-section" style="display: none;">
+    <h2>Login</h2>
+    <div class="form-group">
+        <label for="login-username">Username</label>
+        <input type="text" class="form-control" id="login-username" placeholder="Enter Username" required />
+    </div>
+    <div class="form-group">
+        <label for="login-password">Password</label>
+        <input type="password" class="form-control" id="login-password" placeholder="Enter Password" required />
+    </div>
+    <button type="button" class="btn btn-primary" id="login-button">Login</button>
+</div>
+
+<!-- jQuery to toggle forms -->
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
